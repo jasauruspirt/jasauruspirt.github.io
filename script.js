@@ -39,6 +39,7 @@ closeIcon = previewBox.querySelector(".icon"),
 currentImg = previewBox.querySelector(".current-img"),
 totalImg = previewBox.querySelector(".total-img"),
 shadow = document.querySelector(".shadow");
+
 window.onload = ()=>{
     for (let i = 0; i < gallery.length; i++) {
         totalImg.textContent = gallery.length; //passing total img length to totalImg variable
@@ -91,7 +92,7 @@ window.onload = ()=>{
                 nextBtn.style.display = "block";
                 previewBox.classList.remove("show");
                 shadow.style.display = "none";
-                document.querySelector("body").style.overflow = "scroll";
+                // document.querySelector("body").style.overflow = "scroll";
             }
         }
         
@@ -100,25 +101,23 @@ window.onload = ()=>{
 
 // *************** formulir ***************
 const kirim = document.getElementById('kirim');
+const overlay = document.querySelector('.overlay');
 
 document.getElementById('formulir')
  .addEventListener('submit', function(event) {
    event.preventDefault();
-
-   // loader tampil
-   kirim.innerHTML = 'Sedang diproses ...';
+   overlay.classList.add('aktif');
 
    const serviceID = 'default_service';
    const templateID = 'template_i3ov2dd';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then( () => {
-      // loader hilang
-      kirim.innerHTML = 'Langganan';
+      overlay.classList.remove('aktif');
       alert('Sent!');
+      document.getElementById("formulir").reset();
     }, (err) => {
-      // loader hilang
-      kirim.innerHTML = 'Langganan';
+      overlay.classList.remove('aktif');
       alert(JSON.stringify(err));
     });
 });
