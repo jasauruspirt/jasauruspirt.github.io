@@ -101,25 +101,36 @@ window.onload = ()=>{
 
 // *************** formulir ***************
 const kirim = document.getElementById('kirim');
-const overlay = document.querySelector('.overlay');
+const loader = document.querySelector('.loader');
+const sukses = document.querySelector('.sukses');
+const gagal = document.querySelector('.gagal');
 
 document.getElementById('formulir')
  .addEventListener('submit', function(event) {
    event.preventDefault();
-   overlay.classList.add('aktif');
+   loader.classList.add('aktif');
 
    const serviceID = 'default_service';
    const templateID = 'template_i3ov2dd';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then( () => {
-      overlay.classList.remove('aktif');
-      alert('Sent!');
+      loader.classList.remove('aktif');
+      sukses.classList.add('aktif');
       document.getElementById("formulir").reset();
     }, (err) => {
-      overlay.classList.remove('aktif');
-      alert(JSON.stringify(err));
+      // alert(JSON.stringify(err));
+      loader.classList.remove('aktif');
+      gagal.classList.add('aktif');
+      document.getElementById("formulir").reset();
     });
+});
+
+const tutup = document.querySelectorAll('.btn.tutup');
+tutup.forEach( t => {
+  t.addEventListener("click", () => {
+    t.parentElement.parentElement.classList.remove('aktif');
+  })
 });
 
 // *************** footer credit ***************
