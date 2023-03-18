@@ -595,8 +595,8 @@ footer{
 	}
 }
 
-/* ------------------------- overlay ------------------------- */
-.overlay{
+/* ------------------------- loader & popup  ------------------------- */
+.loader{
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -609,15 +609,102 @@ footer{
 	justify-content: center;
 	align-items: center;
 }
-.overlay.aktif{
+.loader.aktif{
 	z-index: 101;
 	background: rgba(0,0,0,0.25);
 }
-.overlay .loader{
+.loader img{
 	width: 150px;
 	height: 150px;
-	visibility: hidden;
+	opacity: 0;
 }
-.overlay.aktif .loader{
-	visibility: visible;
+.loader.aktif img{
+	opacity: 1;
+}
+/*sukses*/
+.sukses,
+.gagal{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+    top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -100;
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sukses.aktif,
+.gagal.aktif{
+	z-index: 101;
+	opacity: 1;
+	background: rgba(0,0,0,0.25);
+}
+.sukses .box,
+.gagal .box{
+	z-index: 102;
+	width: 75%;
+	background: #fff;
+	padding: 3rem;
+	text-align: center;
+	user-select: none;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+}
+.sukses .box h2,
+.gagal .box h2{
+	font-size: 2rem;
+	color: #333;
+	color: darkgreen;
+}
+.sukses .box i,
+.gagal .box i{
+	font-size: 8rem;
+	color: darkgreen;
+}
+.sukses .box p,
+.gagal .box p{
+	font-size: 18px;
+}
+.sukses .box .btn,
+.gagal .box .btn{
+	margin-top: 0;
+	padding: 8px 32px;
+	border: 1px solid #333;
+	background: #333;
+	color: #fff;
+}
+.sukses .box .btn:hover{
+	border: 1px solid darkgreen;
+	background: darkgreen;
+	color: #fff;
+}
+/*responsive media query*/
+@media (max-width: 480px){
+	.sukses .box,
+	.gagal .box{
+		width: 95%;
+		padding: 3rem 1rem;
+	}
+}
+/*gagal*/
+.gagal .box h2{
+	font-size: 2rem;
+	color: #333;
+	color: darkred;
+}
+.gagal .box i{
+	font-size: 8rem;
+	color: darkred;
+}
+.gagal .box .btn:hover{
+	border: 1px solid darkred;
+	background: darkred;
+	color: #fff;
 }
