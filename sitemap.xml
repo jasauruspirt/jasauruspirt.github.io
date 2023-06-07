@@ -1,19 +1,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>http://jasauruspirt.github.io</loc>
+    <loc>https://jasauruspirt.github.io/index.html</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Link halaman lain -->
-  <!-- <url>
-    <loc>http://jasauruspirt.github.io/about.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url> -->
-  
-  <!-- Gambar di halaman utama -->
   <url>
     <loc>http://jasauruspirt.github.io/about.jpg</loc>
     <image:image>
@@ -86,13 +77,4 @@
       <image:loc>http://jasauruspirt.github.io/logo.png</image:loc>
     </image:image>
   </url>
-  <!-- Gambar di halaman lain -->
-  <!--<url>
-    <loc>http://jasauruspirt.github.io/about.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://jasauruspirt.github.io/nama-gambar.jpg</image:loc>
-    </image:image>
-  </url>-->  
 </urlset>
