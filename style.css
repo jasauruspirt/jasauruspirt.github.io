@@ -412,10 +412,10 @@ footer{
   font-weight: 400;
   line-height: 24px;
 }
-.gallery .preview-box .details .title p{
+.gallery .preview-box .details .title span{
   margin: 0 8px;
 }
-.gallery .preview-box .details .title p.current-img{
+.gallery .preview-box .details .title span.current-img{
   font-weight: 500;
 }
 .gallery .preview-box .details .icon{
