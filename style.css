@@ -802,8 +802,8 @@ footer{
 	        flex-direction: column;
 	gap: 2rem;
 }
-.sukses .box h2,
-.gagal .box h2{
+.sukses .box strong,
+.gagal .box strong{
 	font-size: 2rem;
 	color: #333;
 	color: darkgreen;
@@ -839,7 +839,7 @@ footer{
 	}
 }
 /*gagal*/
-.gagal .box h2{
+.gagal .box strong{
 	font-size: 2rem;
 	color: #333;
 	color: darkred;
