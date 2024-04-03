@@ -74,9 +74,11 @@ button{
 	color: var(--biru);
 	text-shadow: 2px 2px 2px #333;
 	letter-spacing: 8px;
+	line-height: 36px;
 }
 .heading span{
 	color: var(--biru);
+	display: block;
 }
 .btn{
 	margin-top: 1rem;
