@@ -1,3 +1,9 @@
+// --------------- lazy loads ---------------
+const images = document.querySelectorAll("img");
+images.forEach(function(image) {
+ image.setAttribute("loading", "lazy");
+});
+
 // *************** active menu ***************
 const sections = document.querySelectorAll("section[id]");
 window.addEventListener("scroll", function () {
@@ -137,3 +143,18 @@ tutup.forEach( t => {
 const tahun = document.querySelector(".tahun");
 let date = new Date().getFullYear();
 tahun.innerHTML = date;
+
+// --------------- anti cheats ---------------
+const forbiddenKeys = ['c', 'u', 's', 'p'];
+const forbiddenKeyCodes = [123, 73, 74];
+
+document.addEventListener("contextmenu", e => {
+ e.preventDefault();
+}, false);
+
+document.addEventListener("keydown", e => {
+ if (e.ctrlkey || forbiddenKeys.includes(e.key) || forbiddenKeyCodes.includes(e.keyCode)) {
+   e.stopPropagation();
+   e.preventDefault();
+ };
+});
