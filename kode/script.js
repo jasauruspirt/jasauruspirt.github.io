@@ -5,21 +5,23 @@ images.forEach(function(image) {
 });
 
 // *************** active menu ***************
-const sections = document.querySelectorAll("section[id]");
-window.addEventListener("scroll", function () {
-  let scrollDariAtas = window.scrollY;// sama juga dgn pageYOffset
-  sections.forEach(sct => {
-    const tinggiElement = sct.offsetHeight;
-    const atasDariInduk = sct.offsetTop - 60;//sesuaikan dg tinggi header
-    sectionId = sct.getAttribute("id");
-    if (scrollDariAtas >= atasDariInduk && scrollDariAtas <= atasDariInduk + tinggiElement) {
-      document.querySelector(".navbar a[href*=" + sectionId + "]").classList.add("aktif");
-    }
-    else {
-      document.querySelector(".navbar a[href*=" + sectionId + "]").classList.remove("aktif");
-    }
-  });
-});
+// const sections = document.querySelectorAll("section[id]");
+// window.addEventListener("scroll", function () {
+//   let scrollDariAtas = window.scrollY;
+//   // sama juga dgn pageYOffset
+//   sections.forEach(sct => {
+//     const tinggiElement = sct.offsetHeight;
+//     const atasDariInduk = sct.offsetTop - 60;
+//     //sesuaikan dg tinggi header
+//     sectionId = sct.getAttribute("id");
+//     if (scrollDariAtas >= atasDariInduk && scrollDariAtas <= atasDariInduk + tinggiElement) {
+//       document.querySelector(".navbar a[href*=" + sectionId + "]").classList.add("aktif");
+//     }
+//     else {
+//       document.querySelector(".navbar a[href*=" + sectionId + "]").classList.remove("aktif");
+//     }
+//   });
+// });
 
 // *************** menu ***************
 const navbar = document.querySelector('.navbar');
