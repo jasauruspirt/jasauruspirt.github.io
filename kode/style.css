@@ -178,7 +178,7 @@ footer{
 .header .navbar a.aktif{
 	color: var(--biru);
 }
-.header .navbar > a i{
+.header .navbar > a span{
 	display: none;
 }
 .header .navbar .navbar-medsos{
@@ -216,7 +216,7 @@ footer{
 	.header .navbar.aktif{
 		left: 0;
 	}
-	.header .navbar > a i{
+	.header .navbar > a span{
 		display: inline-block;
 		margin-right: 8px;
 	}
@@ -319,7 +319,7 @@ footer{
 	color: whitesmoke;
 	border: 1px solid whitesmoke;
 }
-.home .container .btn i{
+.home .container .btn span{
 	margin-right: 8px;
 }
 
@@ -383,7 +383,7 @@ footer{
 	color: var(--biru);
 	border: 1px solid var(--biru);
 }
-.about .fact .box .cta .btn i{
+.about .fact .box .cta .btn span{
 	margin-right: 8px;
 }
 /*responsive media query*/
@@ -420,7 +420,7 @@ footer{
 	-webkit-box-shadow: 0 2px 8px rgba(0,0,0,.25);
 	        box-shadow: 0 2px 8px rgba(0,0,0,.25);
 }
-.manfaat .ul li i{
+.manfaat .ul li span{
 	color: var(--biru);
 	font-size: 4rem;
 }
@@ -432,7 +432,7 @@ footer{
 .biaya .container .box p:nth-child(2){
 	margin-bottom: 1rem;
 }
-.biaya .container .box .btn i{
+.biaya .container .box .btn span{
 	margin-right: 8px;
 }
 
@@ -614,7 +614,7 @@ footer{
 	-webkit-box-shadow: 0 2px 8px grey;
 	        box-shadow: 0 2px 8px grey;
 }
-.contact .container .box:first-child a i{
+.contact .container .box:first-child a span{
 	font-size: 1rem;
 }
 .contact .container .box:last-child .grid{
@@ -672,7 +672,7 @@ footer{
 .footer .container .box a:hover{
 	color: var(--biru);
 }
-.footer .container .box a i{
+.footer .container .box a span{
 	margin-right: 8px;
 }
 .footer .container .box:last-child p{
@@ -815,8 +815,8 @@ footer{
 	color: #333;
 	color: darkgreen;
 }
-.sukses .box i,
-.gagal .box i{
+.sukses .box span,
+.gagal .box span{
 	font-size: 8rem;
 	color: darkgreen;
 }
@@ -851,7 +851,7 @@ footer{
 	color: #333;
 	color: darkred;
 }
-.gagal .box i{
+.gagal .box span{
 	font-size: 8rem;
 	color: darkred;
 }
