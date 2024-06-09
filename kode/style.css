@@ -151,9 +151,10 @@ footer{
   	z-index: 100;
 }
 .header .logo{
-	font-size: 2rem;
+	font-size: 24px;
 	font-weight: bold;
 	color: var(--biru);
+	flex: none;
 }
 .header .navbar{
 	width: 100%;
@@ -708,6 +709,12 @@ footer{
 }
 .footer .credit p{
 	text-align: center;
+}
+.footer .credit p a{
+	color: var(--biru);
+}
+.footer .credit p a:hover{
+	color: navy;
 }
 /*footer media query*/
 @media(max-width: 480px){
