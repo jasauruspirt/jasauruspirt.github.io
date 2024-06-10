@@ -1,7 +1,45 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/1.0">
   <url>
     <loc>https://jasauruspirt.github.io</loc>
-    <changefreq>daily</changefreq>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://jasauruspirt.github.io/gambar/foto-sampul-jasa-urus-pirt.jpg</image:loc>
+      <image:title>Foto Sampul Jasa Urus PIRT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jasauruspirt.github.io/gambar/klien-jasa-urus-pirt-1.jpg</image:loc>
+      <image:title>Klien Jasa Urus PIRT 1</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jasauruspirt.github.io/gambar/klien-jasa-urus-pirt-2.jpg</image:loc>
+      <image:title>Klien Jasa Urus PIRT 2</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jasauruspirt.github.io/gambar/klien-jasa-urus-pirt-3.jpg</image:loc>
+      <image:title>Klien Jasa Urus PIRT 3</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jasauruspirt.github.io/gambar/klien-jasa-urus-pirt-4.jpg</image:loc>
+      <image:title>Klien Jasa Urus PIRT 4</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jasauruspirt.github.io/gambar/klien-jasa-urus-pirt-5.jpg</image:loc>
+      <image:title>Klien Jasa Urus PIRT 5</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jasauruspirt.github.io/gambar/klien-jasa-urus-pirt-6.jpg</image:loc>
+      <image:title>Klien Jasa Urus PIRT 6</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jasauruspirt.github.io/gambar/logo-jasa-urus-pirt.png</image:loc>
+      <image:title>Logo Jasa Urus PIRT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jasauruspirt.github.io/gambar/meta-image-jasa-urus-pirt.jpg</image:loc>
+      <image:title>Meta Image Jasa Urus PIRT</image:title>
+    </image:image>
   </url>
 </urlset>
