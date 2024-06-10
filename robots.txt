@@ -1,4 +1,3 @@
 User-agent: *
 Disallow:
 Sitemap: https://jasauruspirt.github.io/sitemap.xml
-Sitemap: https://jasauruspirt.github.io/sitemap-gambar.xml
