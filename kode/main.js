@@ -112,6 +112,27 @@ const klienSlider = new Swiper(".klien-slider", {
 });
 
 
+// *************** artikel section ***************
+const artikelSection = new Swiper(".artikel-slider", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 16,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    500: {
+      slidesPerView: 2,
+    },
+    800: {
+      slidesPerView: 3,
+    },
+  },
+  autoplay: {
+    delay: 3000,
+  },
+});
+
 // *************** footer credit ***************
 const tahun = document.querySelector(".tahun");
 let date = new Date().getFullYear();
