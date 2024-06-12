@@ -132,6 +132,7 @@
 }
 .manfaat .ul{
 	margin-top: 2rem;
+	list-style: none;
 }
 .manfaat .ul li{
 	padding: 2rem 1rem;

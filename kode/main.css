@@ -210,6 +210,16 @@ footer{
 	text-align: center;
 	color: #999;
 }
+.main .article ul li:not(:last-child),
+.main .article ol li:not(:last-child){
+	margin-bottom: 20px;
+}
+.main .article ol ul{
+	list-style: initial;
+}
+.main .article ol ul li:not(:last-child){
+	margin-bottom: 16px;
+}
 
 /* ------------------------- footer section ------------------------- */
 .footer{
@@ -466,6 +476,7 @@ footer{
 .box-search .hasil-pencarian .ditemukan b{
 	color: var(--biru);
 	margin-top: 16px;
+	display: block;
 }
 /* responsive */
 @media screen and (max-width: 800px){
