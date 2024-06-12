@@ -192,6 +192,12 @@ footer{
 .main .article > *:not(:last-child){
 	margin-bottom: 20px;
 }
+.main .article figure figcaption{
+	margin-top: 8px;
+	font-size: 12px;
+	text-align: center;
+	color: #777;
+}
 
 /* ------------------------- footer section ------------------------- */
 .footer{
@@ -447,6 +453,7 @@ footer{
 }
 .box-search .hasil-pencarian .ditemukan b{
 	color: var(--biru);
+	margin-top: 16px;
 }
 /* responsive */
 @media screen and (max-width: 800px){
