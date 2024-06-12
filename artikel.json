@@ -3,23 +3,65 @@
     {
       "judul": "Pengertian PIRT: Panduan Lengkap untuk UKM Pangan",
       "deskripsi": "Pelajari tentang PIRT, izin usaha pangan rumah tangga yang wajib dimiliki untuk meningkatkan kepercayaan konsumen dan mengembangkan bisnismu.",
-      "url": "https://jasauruspirt.github.io/pengertian-pirt-panduan-lengkap-untuk-ukm-pangan.html",
-      "alamat_gambar": "https://jasauruspirt.github.io/gambar/pengertian-pirt-lengkap-untuk-umkm.jpg",
+      "url": "/pengertian-pirt-panduan-lengkap-untuk-ukm-pangan.html",
+      "alamat_gambar": "/gambar/pengertian-pirt-lengkap-untuk-umkm.jpg",
       "tanggal": "2020-02-01"
+    },
+    {
+      "judul": "Judul Artikel 1",
+      "deskripsi": "Deskripsi singkat artikel 1",
+      "url": "xxxxxx",
+      "alamat_gambar": "xxxxxx",
+      "tanggal": "xxxxxx"
     },
     {
       "judul": "Judul Artikel 2",
       "deskripsi": "Deskripsi singkat artikel 2",
-      "url": "https://en.wikipedia.org/wiki/Main_Page",
-      "alamat_gambar": "https://pixabay.com/",
-      "tanggal": "2024-06-11"
+      "url": "xxxxxx",
+      "alamat_gambar": "xxxxxx",
+      "tanggal": "xxxxxx"
     },
     {
       "judul": "Judul Artikel 3",
       "deskripsi": "Deskripsi singkat artikel 3",
-      "url": "https://en.wikipedia.org/wiki/Main_Page",
-      "alamat_gambar": "https://pixabay.com/",
-      "tanggal": "2024-06-10"
+      "url": "xxxxxx",
+      "alamat_gambar": "xxxxxx",
+      "tanggal": "xxxxxx"
+    },
+    {
+      "judul": "Judul Artikel 4",
+      "deskripsi": "Deskripsi singkat artikel 4",
+      "url": "xxxxxx",
+      "alamat_gambar": "xxxxxx",
+      "tanggal": "xxxxxx"
+    },
+    {
+      "judul": "Judul Artikel 5",
+      "deskripsi": "Deskripsi singkat artikel 5",
+      "url": "xxxxxx",
+      "alamat_gambar": "xxxxxx",
+      "tanggal": "xxxxxx"
+    },
+    {
+      "judul": "Judul Artikel 6",
+      "deskripsi": "Deskripsi singkat artikel 6",
+      "url": "xxxxxx",
+      "alamat_gambar": "xxxxxx",
+      "tanggal": "xxxxxx"
+    },
+    {
+      "judul": "Judul Artikel 7",
+      "deskripsi": "Deskripsi singkat artikel 7",
+      "url": "xxxxxx",
+      "alamat_gambar": "xxxxxx",
+      "tanggal": "xxxxxx"
+    },
+    {
+      "judul": "Judul Artikel 8",
+      "deskripsi": "Deskripsi singkat artikel 8",
+      "url": "xxxxxx",
+      "alamat_gambar": "xxxxxx",
+      "tanggal": "xxxxxx"
     }
   ]
 }
