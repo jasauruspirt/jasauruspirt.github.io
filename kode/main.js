@@ -1,3 +1,13 @@
+// *************** lazy loads ***************
+const images = document.querySelectorAll("img");
+images.forEach(function(image) {
+ image.setAttribute("loading", "lazy");
+});
+
+// *************** next header ***************
+const nextHeader = document.querySelector('.header').nextElementSibling;
+nextHeader.style.marginTop = "60px";
+
 // *************** Pencarian ***************
 const ikonTelusur = document.querySelector(".search");
 const boxTelusur = document.querySelector(".box-search");
@@ -53,92 +63,6 @@ function displayResults(articles) {
 }
 
 
-// *************** Artikel Terbaru ***************
-async function fetchLatestArticles() {
-  try {
-    const response = await fetch('/artikel.json');
-    const data = await response.json();
-    const latestArticles = data.daftar_artikel.slice(-5).reverse(); // Mengambil 5 artikel terbaru dan membalik urutannya
-    displayLatestArticles(latestArticles);
-  } catch (error) {
-    console.error('Terjadi kesalahan saat mengambil artikel:', error);
-  }
-}
-
-function displayLatestArticles(articles) {
-  const artikelTerbaru = document.querySelector('.artikel-terbaru');
-  artikelTerbaru.innerHTML = articles.map(article => `
-    <div class="swiper-slide slide">
-      <img src="${article.alamat_gambar}" alt="${article.judul}" title="${article.judul}">
-      ${article.judul}
-    </div>
-  `).join('');
-}
-
-fetchLatestArticles();
-
-
-// *************** lazy loads ***************
-const images = document.querySelectorAll("img");
-images.forEach(function(image) {
- image.setAttribute("loading", "lazy");
-});
-
-
-// *************** next header ***************
-const nextHeader = document.querySelector('.header').nextElementSibling;
-nextHeader.style.marginTop = "60px";
-
-
-// *************** galeri klien ***************
-const klienSlider = new Swiper(".klien-slider", {
-  loop: true,
-  grabCursor: true,
-  spaceBetween: 16,
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    500: {
-      slidesPerView: 2,
-    },
-    800: {
-      slidesPerView: 3,
-    },
-  },
-  autoplay: {
-    delay: 3000,
-  },
-});
-
-
-// *************** artikel section ***************
-const artikelSection = new Swiper(".artikel-slider", {
-  loop: true,
-  grabCursor: true,
-  spaceBetween: 16,
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    500: {
-      slidesPerView: 2,
-    },
-    800: {
-      slidesPerView: 3,
-    },
-  },
-  autoplay: {
-    delay: 3000,
-  },
-});
-
-// *************** footer credit ***************
-const tahun = document.querySelector(".tahun");
-let date = new Date().getFullYear();
-tahun.innerHTML = date;
-
-
 // *************** formulir ***************
 const kirim = document.getElementById('kirim');
 const loader = document.querySelector('.loader');
@@ -171,6 +95,12 @@ tutup.forEach( t => {
     t.parentElement.parentElement.classList.remove('aktif');
   })
 });
+
+
+// *************** footer credit ***************
+const tahun = document.querySelector(".tahun");
+let date = new Date().getFullYear();
+tahun.innerHTML = date;
 
 
 // --------------- anti cheats ---------------
