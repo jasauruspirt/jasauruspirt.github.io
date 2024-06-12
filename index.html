@@ -34,12 +34,14 @@
 	<meta property="og:image" content="https://jasauruspirt.github.io/gambar/meta-image-jasa-urus-pirt.jpg">
 	<!-- link -->
 	<link rel="shortcut icon" href="gambar/logo-jasa-urus-pirt.png" type="image/x-icon">
-	<link rel="stylesheet" href="kode/style.css">
+	<link rel="stylesheet" href="kode/main.css">
+	<link rel="stylesheet" href="kode/index.css">
 	<link rel="canonical" href="https://jasauruspirt.github.io">
 	<link rel="sitemap" type="application/xml" title="Sitemap Jasa Urus PIRT" href="https://jasauruspirt.github.io/sitemap.xml">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed Jasa Urus PIRT" href="https://jasauruspirt.github.io/rss.xml">
     <link rel="alternate" type="application/atom+xml" title="Atom Feed Jasa Urus PIRT" href="https://jasauruspirt.github.io/atom.xml">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 	<!-- verifikasi meta -->
 	<meta name="google-adsense-account" content="ca-pub-1084634852815800">
 	<meta name="google-site-verification" content="88g7jLaviZ5SSWZ3t8ECs-GSaCe-XWqOPvwrBHpYg_s">
@@ -177,25 +179,11 @@
 	<!-- *************** header section *************** -->
 	<header class="header">
 		<a href="/" class="logo">Jasa Urus PIRT</a>
-		<nav class="navbar">
-			<a href="#home" class="aktif"><span class="fas fa-caret-right"></span>Home</a>
-			<a href="#about"><span class="fas fa-caret-right"></span>Tentang</a>
-			<a href="#manfaat"><span class="fas fa-caret-right"></span>Manfaat</a>
-			<a href="#biaya"><span class="fas fa-caret-right"></span>Biaya</a>
-			<a href="#gallery"><span class="fas fa-caret-right"></span>Galeri</a>
-			<a href="#contact"><span class="fas fa-caret-right"></span>Kontak</a>
-			<div class="navbar-medsos">
-				<a href="https://web.facebook.com/jasajatim" target="_blank" class="fab fa-facebook-f"></a>
-				<a href="https://twitter.com/JasaJatim" target="_blank" class="fab fa-twitter"></a>
-				<a href="https://www.instagram.com/jasajatim" target="_blank" class="fab fa-instagram"></a>
-				<a href="https://www.linkedin.com/in/jasajatim" target="_blank" class="fab fa-linkedin"></a>
-			</div>
-		</nav>
-		<button class="menu fas fa-th-large"></button>
+		<span class="search fas fa-search"></span>
 	</header>
 
 	<!-- *************** home section *************** -->
-	<section id="home" class="home">
+	<section class="home">
 		<div class="container">
 			<h1>Jasa Urus PIRT</h1>
 			<p>Melayani <strong>pengurusan PIRT</strong> (Pangan Industri Rumah Tangga) yang resmi dan cepat.</p>
@@ -204,7 +192,7 @@
 	</section>
 
 	<!-- *************** about section *************** -->
-	<section id="about" class="about">
+	<section class="about" id="about">
 		<h2 class="heading">Tentang <span>Jasa PIRT</span></h2>
 		<div class="container">
 			<div class="box">
@@ -232,51 +220,51 @@
 	</section>
 
 	<!-- *************** product section *************** -->
-	<section id="manfaat" class="manfaat">
+	<section class="manfaat">
 		<h2 class="heading">Manfaat <span><em style="font-style: normal;">Sertifikat PIRT</em></span></h2>
 		<p>Pendaftaran <strong>Pangan Industri Rumah Tangga</strong> (<strong>PIRT</strong>) merupakan komponen yang penting karena berperan sebagai jaminan bahwa <em>usaha makanan atau minuman</em> yang dijual memenuhi standar keamanan makanan. Berikut ini adalah keuntungan yang anda dapatkan jika mendaftar PIRT.</p>
 		<ul class="ul grid">
 			<li>
-				<span class="far fa-check-circle"></span>
-				<p>Jaminan bahwa usaha makanan atau minuman yang dijual <em>memenuhi standar keamanan makanan</em>.</p>
+				<span class="fas fa-shield-alt"></span>
+				<p>Memenuhi standar keamanan makanan.</p>
 			</li>
-			<li>
-				<span class="far fa-check-circle"></span>
-				<p>Produk sudah layak beredar</p>
-			</li>
-			<li>
-				<span class="far fa-check-circle"></span>
-				<p>Produk bebas dipasarkan secara luas</p>
-			</li>
-			<li>
-				<span class="far fa-check-circle"></span>
-				<p>Keamanan dan mutu produk terjamin</p>
-			</li>
-			<li>
-				<span class="far fa-check-circle"></span>
-				<p>Kepercayaan pembeli meningkat</p>
-			</li>
-			<li>
-				<span class="far fa-check-circle"></span>
-				<p>Profesionalitas produk terangkat</p>
-			</li>
-			<li>
-				<span class="far fa-check-circle"></span>
-				<p>Meningkatkan nilai jual produk</p>
-			</li>
-			<li>
-				<span class="far fa-check-circle"></span>
-				<p>Mendongkrak harga produk</p>
-			</li>
-			<li>
-				<span class="far fa-check-circle"></span>
-				<p>Produk bisa masuk ritel besar</p>
-			</li>
+		    <li>
+		    	<span class="fas fa-check-circle"></span>
+		    	<p>Produk sudah layak beredar.</p>
+		    </li>
+		    <li>
+		    	<span class="fas fa-globe"></span>
+		    	<p>Produk bebas dipasarkan secara luas.</p>
+		    </li>
+		    <li>
+		    	<span class="fas fa-certificate"></span>
+		    	<p>Keamanan dan mutu produk terjamin.</p>
+		    </li>
+		    <li>
+		    	<span class="fas fa-thumbs-up"></span>
+		    	<p>Kepercayaan pembeli meningkat.</p>
+		    </li>
+		    <li>
+		    	<span class="fas fa-briefcase"></span>
+		    	<p>Profesionalitas produk terangkat.</p>
+		    </li>
+		    <li>
+		    	<span class="fas fa-chart-line"></span>
+		    	<p>Meningkatkan nilai jual produk.</p>
+		    </li>
+		    <li>
+		    	<span class="fas fa-dollar-sign"></span>
+		    	<p>Mendongkrak harga produk.</p>
+		    </li>
+		    <li>
+		    	<span class="fas fa-shopping-cart"></span>
+		    	<p>Produk bisa masuk ritel besar.</p>
+		    </li>
 		</ul>
 	</section>
 
 	<!-- *************** service section *************** -->
-	<section id="biaya" class="biaya">
+	<section class="biaya">
 		<h2 class="heading">Biaya <span>Pendaftaran PIRT</span></h2>
 		<div class="container grid">
 			<div class="box">
@@ -292,46 +280,34 @@
 	</section>
 
 	<!-- *************** gallery section *************** -->
-	<section id="gallery" class="gallery">
+	<section class="gallery">
 		<h2 class="heading">Galeri <span>Klien UMKM PIRT</span></h2>
-		<div class="container">
-			<div class="box">
-				<div class="image">
-					<span><img src="gambar/klien-jasa-urus-pirt-1.jpg" alt="klien jasa urus pirt"></span>
+		<div class="swiper klien-slider">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide">
+					<img src="gambar/klien-jasa-urus-pirt-1.jpg" alt="klien dari jasa urus pirt">
 				</div>
-				<div class="image">
-					<span><img src="gambar/klien-jasa-urus-pirt-2.jpg" alt="klien jasa urus pirt"></span>
+				<div class="swiper-slide slide">
+					<img src="gambar/klien-jasa-urus-pirt-2.jpg" alt="klien dari jasa urus pirt">
 				</div>
-				<div class="image">
-					<span><img src="gambar/klien-jasa-urus-pirt-3.jpg" alt="klien jasa urus pirt"></span>
+				<div class="swiper-slide slide">
+					<img src="gambar/klien-jasa-urus-pirt-3.jpg" alt="klien dari jasa urus pirt">
 				</div>
-				<div class="image">
-					<span><img src="gambar/klien-jasa-urus-pirt-4.jpg" alt="klien jasa urus pirt"></span>
+				<div class="swiper-slide slide">
+					<img src="gambar/klien-jasa-urus-pirt-4.jpg" alt="klien dari jasa urus pirt">
 				</div>
-				<div class="image">
-					<span><img src="gambar/klien-jasa-urus-pirt-5.jpg" alt="klien jasa urus pirt"></span>
+				<div class="swiper-slide slide">
+					<img src="gambar/klien-jasa-urus-pirt-5.jpg" alt="klien dari jasa urus pirt">
 				</div>
-				<div class="image">
-					<span><img src="gambar/klien-jasa-urus-pirt-6.jpg" alt="klien jasa urus pirt"></span>
+				<div class="swiper-slide slide">
+					<img src="gambar/klien-jasa-urus-pirt-6.jpg" alt="klien dari jasa urus pirt">
 				</div>
-		    </div>
+			</div>
 		</div>
-		<div class="preview-box">
-			<div class="details">
-				<div class="title">Gambar <span class="current-img"></span> dari <span class="total-img"></span></div>
-				<div class="icon fas fa-times"></div>
-		    </div>
-		    <div class="image-box">
-		    	<div class="slide prev"><span class="fas fa-angle-left"></span></div>
-		    	<div class="slide next"><span class="fas fa-angle-right"></span></div>
-		    	<img src="" alt="klien jasa urus pirt">
-		    </div>
-		</div>
-		<div class="shadow"></div>
 	</section>
 
 	<!-- *************** contact section *************** -->
-	<section id="contact" class="contact">
+	<section class="contact">
 		<h2 class="heading">Kontak <span>Jasa Pengurusan PIRT</span></h2>
 		<div class="container grid">
 			<div class="box">
@@ -387,10 +363,10 @@
 			</div>
 			<div class="box">
 				<h3>Medsos</h3>
-				<a href="https://web.facebook.com/jasajatim" target="_blank"><span class="fab fa-facebook-f"></span>Facebook</a>
+				<a href="https://www.facebook.com/jasapirt" target="_blank"><span class="fab fa-facebook-f"></span>Facebook</a>
 				<a href="https://twitter.com/JasaJatim" target="_blank"><span class="fab fa-twitter"></span>Twitter</a>
-				<a href="https://www.instagram.com/jasajatim" target="_blank"><span class="fab fa-instagram"></span>Instagram</a>
-				<a href="https://www.linkedin.com/in/jasajatim" target="_blank"><span class="fab fa-linkedin"></span>Linkedin</a>
+				<a href="https://www.instagram.com/izinpirt" target="_blank"><span class="fab fa-instagram"></span>Instagram</a>
+				<a href="https://www.linkedin.com/company/jasapirt" target="_blank"><span class="fab fa-linkedin"></span>Linkedin</a>
 			</div>
 			<div class="box">
 				<h3>Langganan</h3>
@@ -428,7 +404,14 @@
   		</div>
 	</div>
 
-	<script src="kode/script.js"></script>
+	<!-- *************** pencarian *************** -->
+	<div class="box-search">
+		<input class="kolom-telusur" type="text" name="pencarian" placeholder="Cari artikel disini!" required>
+		<div class="hasil-pencarian"></div>
+	</div>
+
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script src="kode/main.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 	<script>emailjs.init('azO1U-4tTiNwC8S6D')</script>
 </body>
