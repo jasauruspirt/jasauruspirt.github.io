@@ -241,6 +241,13 @@ footer{
 	border: 1px solid #999;
 	border-radius: 61px;
 }
+/* responsive */
+@media screen and (max-width: 800px){
+	.main{
+		grid-template-columns: 1fr;
+	}
+}
+@media screen and (max-width: 500px){}
 
 /* ------------------------- footer section ------------------------- */
 .footer{
