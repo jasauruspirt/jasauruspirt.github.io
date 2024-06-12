@@ -1,0 +1,25 @@
+{
+  "daftar_artikel": [
+    {
+      "judul": "Pengertian PIRT: Panduan Lengkap untuk UKM Pangan",
+      "deskripsi": "Pelajari tentang PIRT, izin usaha pangan rumah tangga yang wajib dimiliki untuk meningkatkan kepercayaan konsumen dan mengembangkan bisnismu.",
+      "url": "https://jasauruspirt.github.io/pengertian-pirt-panduan-lengkap-untuk-ukm-pangan.html",
+      "alamat_gambar": "https://jasauruspirt.github.io/gambar/pengertian-pirt-lengkap-untuk-umkm.jpg",
+      "tanggal": "2020-02-01"
+    },
+    {
+      "judul": "Judul Artikel 2",
+      "deskripsi": "Deskripsi singkat artikel 2",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "alamat_gambar": "https://pixabay.com/",
+      "tanggal": "2024-06-11"
+    },
+    {
+      "judul": "Judul Artikel 3",
+      "deskripsi": "Deskripsi singkat artikel 3",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "alamat_gambar": "https://pixabay.com/",
+      "tanggal": "2024-06-10"
+    }
+  ]
+}
