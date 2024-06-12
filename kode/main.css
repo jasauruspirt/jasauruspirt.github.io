@@ -245,9 +245,14 @@ footer{
 @media screen and (max-width: 800px){
 	.main{
 		grid-template-columns: 1fr;
+		padding: 3rem 2rem;
 	}
 }
-@media screen and (max-width: 500px){}
+@media screen and (max-width: 500px){
+	.main{
+		padding: 3rem 1rem;
+	}
+}
 
 /* ------------------------- footer section ------------------------- */
 .footer{
