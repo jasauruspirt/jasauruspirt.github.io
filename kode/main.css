@@ -237,7 +237,7 @@ footer{
 	gap: 12px;
 }
 .main .article .tag em{
-	padding: 8px;
+	padding: 8px 16px;
 	border: 1px solid #999;
 	border-radius: 61px;
 }
