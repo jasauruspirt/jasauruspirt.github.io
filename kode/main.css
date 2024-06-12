@@ -214,18 +214,29 @@ footer{
 .main .article ol li:not(:last-child){
 	margin-bottom: 20px;
 }
+.main .article ul li p,
 .main .article ol li p{
 	margin-top: 16px;
 }
 .main .article ol ul{
 	list-style: initial;
 	margin-top: 20px;
+	margin-inline-start: 20px!important; /* memberi margin kiri */
 }
 .main .article ol ul li{
 	list-style-position: inside!important;
 }
 .main .article ol ul li:not(:last-child){
 	margin-bottom: 16px;
+}
+.main .article .tag em{
+	padding: 8px;
+	border: 1px solid #999;
+	border-radius: 61px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 12px;
 }
 
 /* ------------------------- footer section ------------------------- */
