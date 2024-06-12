@@ -7,6 +7,12 @@ const hasilPencarian = document.querySelector(".hasil-pencarian");
 window.addEventListener("click", e => {
   if ( e.target === ikonTelusur ) {
     boxTelusur.classList.toggle("aktif");
+    if ( boxTelusur.classList.contains("aktif") ) {
+      ikonTelusur.classList.add("fa-times");
+    }
+    else{
+      ikonTelusur.classList.remove("fa-times"); 
+    }
   }
 });
 
