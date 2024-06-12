@@ -53,6 +53,31 @@ function displayResults(articles) {
 }
 
 
+// *************** Artikel Terbaru ***************
+async function fetchLatestArticles() {
+  try {
+    const response = await fetch('/artikel.json');
+    const data = await response.json();
+    const latestArticles = data.daftar_artikel.slice(-5).reverse(); // Mengambil 5 artikel terbaru dan membalik urutannya
+    displayLatestArticles(latestArticles);
+  } catch (error) {
+    console.error('Terjadi kesalahan saat mengambil artikel:', error);
+  }
+}
+
+function displayLatestArticles(articles) {
+  const artikelTerbaru = document.querySelector('.artikel-terbaru');
+  artikelTerbaru.innerHTML = articles.map(article => `
+    <div class="swiper-slide slide">
+      <img src="${article.alamat_gambar}" alt="${article.judul}" title="${article.judul}">
+      ${article.judul}
+    </div>
+  `).join('');
+}
+
+fetchLatestArticles();
+
+
 // *************** lazy loads ***************
 const images = document.querySelectorAll("img");
 images.forEach(function(image) {
