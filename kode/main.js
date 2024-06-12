@@ -5,7 +5,7 @@ const kolomTelusur = document.querySelector(".kolom-telusur");
 const hasilPencarian = document.querySelector(".hasil-pencarian");
 
 window.addEventListener("click", e => {
-  if ( e.target == ikonTelusur ) {
+  if ( e.target === ikonTelusur ) {
     boxTelusur.classList.toggle("aktif");
   }
 });
@@ -22,11 +22,10 @@ kolomTelusur.addEventListener("input", () => {
 
 async function fetchArticles(query) {
   try {
-    const response = await fetch('/artikel.json');
+    const response = await fetch('path/to/your/json/file.json');
     const data = await response.json();
     const filteredArticles = data.daftar_artikel.filter(article => 
-      article.judul.toLowerCase().includes(query) || 
-      article.deskripsi.toLowerCase().includes(query)
+      article.judul.toLowerCase().includes(query)
     );
     displayResults(filteredArticles);
   } catch (error) {
