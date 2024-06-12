@@ -432,6 +432,7 @@ footer{
 }
 .box-search .hasil-pencarian .ditemukan{
 	margin-top: 20px;
+	display: block;
 }
 .box-search .hasil-pencarian .ditemukan img{
 	max-width: 300px;
