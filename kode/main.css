@@ -7,7 +7,6 @@
 	outline: none;
 	border: none;
 	text-decoration: none;
-	list-style: none;
 	-webkit-tap-highlight-color: transparent !important;
 	-webkit-user-select: none!important;
 	   -moz-user-select: none!important;
@@ -66,6 +65,14 @@ p{
 button{
 	background: transparent;
 	cursor: pointer;
+}
+ul > li,
+ol > li{
+  list-style-position: inside!important;
+}
+ul > li::marker,
+ol > li::marker{
+  margin-right: 12px;
 }
 .heading{
 	font-size: 28px;
@@ -192,11 +199,16 @@ footer{
 .main .article > *:not(:last-child){
 	margin-bottom: 20px;
 }
+.main .article h1{
+	font-size: 32px;
+	line-height: 40px;
+	color: var(--biru);
+}
 .main .article figure figcaption{
 	margin-top: 8px;
 	font-size: 12px;
 	text-align: center;
-	color: #777;
+	color: #999;
 }
 
 /* ------------------------- footer section ------------------------- */
