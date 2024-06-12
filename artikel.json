@@ -11,35 +11,35 @@
       "judul": "Judul Artikel 1",
       "deskripsi": "Deskripsi singkat artikel 1",
       "url": "/",
-      "alamat_gambar": "xxxxxx",
+      "alamat_gambar": "/gambar/logo-jasa-urus-pirt.png",
       "tanggal": "2020-01-03"
     },
     {
       "judul": "Judul Artikel 2",
       "deskripsi": "Deskripsi singkat artikel 2",
       "url": "/",
-      "alamat_gambar": "xxxxxx",
+      "alamat_gambar": "/gambar/logo-jasa-urus-pirt.png",
       "tanggal": "2020-01-04"
     },
     {
       "judul": "Judul Artikel 3",
       "deskripsi": "Deskripsi singkat artikel 3",
       "url": "/",
-      "alamat_gambar": "xxxxxx",
+      "alamat_gambar": "/gambar/logo-jasa-urus-pirt.png",
       "tanggal": "2020-01-05"
     },
     {
       "judul": "Judul Artikel 4",
       "deskripsi": "Deskripsi singkat artikel 4",
       "url": "/",
-      "alamat_gambar": "xxxxxx",
+      "alamat_gambar": "/gambar/logo-jasa-urus-pirt.png",
       "tanggal": "2020-01-06"
     },
     {
       "judul": "Judul Artikel 5",
       "deskripsi": "Deskripsi singkat artikel 5",
       "url": "/",
-      "alamat_gambar": "xxxxxx",
+      "alamat_gambar": "/gambar/logo-jasa-urus-pirt.png",
       "tanggal": "2020-01-07"
     }
   ]
