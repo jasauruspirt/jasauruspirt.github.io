@@ -11,7 +11,7 @@ window.addEventListener("click", e => {
 
 kolomTelusur.addEventListener("input", () => {
   const query = kolomTelusur.value.toLowerCase();
-  if (query.length > 2) {
+  if (query.length > 0) {
     fetchArticles(query);
   } else {
     hasilPencarian.innerHTML = "";
@@ -20,7 +20,7 @@ kolomTelusur.addEventListener("input", () => {
 
 async function fetchArticles(query) {
   try {
-    const response = await fetch('/artikel.json');
+    const response = await fetch('path/to/your/json/file.json');
     const data = await response.json();
     const filteredArticles = data.daftar_artikel.filter(article => 
       article.judul.toLowerCase().includes(query) || 
@@ -33,14 +33,20 @@ async function fetchArticles(query) {
 }
 
 function displayResults(articles) {
-  hasilPencarian.innerHTML = articles.map(article => `
-    <div class="artikel">
-      <img src="${article.alamat_gambar}" alt="${article.judul}">
-      <h3><a href="${article.url}">${article.judul}</a></h3>
-      <p>${article.deskripsi}</p>
-      <span>${new Date(article.tanggal).toLocaleDateString()}</span>
-    </div>
-  `).join('');
+  if (articles.length > 0) {
+    hasilPencarian.innerHTML = articles.map(article => `
+      <div class="artikel">
+        <img src="${article.alamat_gambar}" alt="${article.judul}">
+        <div>
+          <h3><a href="${article.url}">${article.judul}</a></h3>
+          <p>${article.deskripsi}</p>
+          <span>${new Date(article.tanggal).toLocaleDateString()}</span>
+        </div>
+      </div>
+    `).join('');
+  } else {
+    hasilPencarian.innerHTML = "<p>No articles found.</p>";
+  }
 }
 
 
