@@ -6,8 +6,16 @@
     <priority>1.0</priority>
     <changefreq>daily</changefreq>
     <image:image>
-      <image:loc>https://jasauruspirt.github.io/gambar/gambar-utama-jasa-urus-pirt.jpg</image:loc>
+      <image:loc>https://jasauruspirt.github.io/gambar/logo-jasa-urus-pirt.png</image:loc>
+      <image:title>Logo Jasa Urus PIRT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jasauruspirt.github.io/gambar/sampul/jasa-urus-pirt.jpg</image:loc>
       <image:title>Foto Sampul Jasa Urus PIRT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jasauruspirt.github.io/gambar/poster/jasa-urus-pirt.jpg</image:loc>
+      <image:title>Meta Image Jasa Urus PIRT</image:title>
     </image:image>
     <image:image>
       <image:loc>https://jasauruspirt.github.io/gambar/klien-jasa-urus-pirt-1.jpg</image:loc>
@@ -33,22 +41,15 @@
       <image:loc>https://jasauruspirt.github.io/gambar/klien-jasa-urus-pirt-6.jpg</image:loc>
       <image:title>Klien Jasa Urus PIRT 6</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://jasauruspirt.github.io/gambar/logo-jasa-urus-pirt.png</image:loc>
-      <image:title>Logo Jasa Urus PIRT</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://jasauruspirt.github.io/gambar/meta-image-jasa-urus-pirt.jpg</image:loc>
-      <image:title>Meta Image Jasa Urus PIRT</image:title>
-    </image:image>
   </url>
+
   <url>
     <loc>https://jasauruspirt.github.io/pengertian-pirt-panduan-lengkap-untuk-ukm-pangan.html</loc>
     <lastmod>2020-01-02T00:00:00+00:00</lastmod>
     <priority>1.0</priority>
     <changefreq>daily</changefreq>
     <image:image>
-      <image:loc>https://jasauruspirt.github.io/gambar/pengertian-pirt-lengkap-untuk-umkm.jpg</image:loc>
+      <image:loc>https://jasauruspirt.github.io/gambar/sampul/pengertian-pirt-lengkap-untuk-umkm.jpg</image:loc>
       <image:title>Pengertian PIRT: Panduan Lengkap untuk UKM Pangan</image:title>
     </image:image>
   </url>
