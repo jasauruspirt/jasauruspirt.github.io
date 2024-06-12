@@ -2,6 +2,7 @@
 const ikonTelusur = document.querySelector(".search");
 const boxTelusur = document.querySelector(".box-search");
 const kolomTelusur = document.querySelector(".kolom-telusur");
+const hasilPencarian = document.querySelector(".hasil-pencarian");
 
 window.addEventListener("click", e => {
   if ( e.target == ikonTelusur ) {
