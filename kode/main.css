@@ -429,8 +429,8 @@ footer{
 }
 .box-search .hasil-pencarian{
 	margin-top: 24px;
-	max-height: 70vh; /* Mengatur tinggi maksimum */
-	overflow-y: auto; /* Mengaktifkan scrollbar vertikal */
+	max-height: 75vh;
+	overflow-y: auto;
 }
 .box-search .hasil-pencarian .ditemukan{
 	margin-top: 20px;
