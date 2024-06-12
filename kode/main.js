@@ -11,6 +11,7 @@ window.addEventListener("click", e => {
 
 kolomTelusur.addEventListener("input", () => {
   const query = kolomTelusur.value.toLowerCase();
+  console.log('Current input:', query);
   if (query.length > 0) {
     fetchArticles(query);
   } else {
@@ -20,7 +21,7 @@ kolomTelusur.addEventListener("input", () => {
 
 async function fetchArticles(query) {
   try {
-    const response = await fetch('/artikel.json');
+    const response = await fetch('path/to/your/json/file.json');
     const data = await response.json();
     const filteredArticles = data.daftar_artikel.filter(article => 
       article.judul.toLowerCase().includes(query) || 
