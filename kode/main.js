@@ -52,7 +52,7 @@ async function fetchArticles(query) {
 function displayResults(articles) {
   if (articles.length > 0) {
     hasilPencarian.innerHTML = articles.map(article => `
-      <a href="${article.url}" class="ditemukan grid">
+      <a href="${article.url}" class="ditemukan">
         <img src="${article.alamat_gambar}" alt="${article.judul}" title="${article.judul}">
         <b>${article.judul}</b>
       </a>
