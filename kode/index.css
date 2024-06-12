@@ -1,6 +1,6 @@
 /* ------------------------- home section ------------------------- */
 .home{
-	background: url(/gambar/foto-sampul-jasa-urus-pirt.jpg) no-repeat;
+	background: url(/gambar/sampul/jasa-urus-pirt.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
 	height: calc(100vh - 60px);
