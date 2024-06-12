@@ -430,6 +430,16 @@ footer{
 .box-search .hasil-pencarian{
 	margin-top: 24px;
 }
+.box-search .hasil-pencarian .ditemukan{
+	margin-top: 20px;
+}
+.box-search .hasil-pencarian .ditemukan img{
+	max-width: 300px;
+	height: auto;
+}
+.box-search .hasil-pencarian .ditemukan b{
+	color: var(--biru);
+}
 /* responsive */
 @media screen and (max-width: 800px){
 	.box-search{
