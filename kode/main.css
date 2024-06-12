@@ -214,6 +214,9 @@ footer{
 .main .article ol li:not(:last-child){
 	margin-bottom: 20px;
 }
+.main .article ol li p{
+	margin-top: 16px;
+}
 .main .article ol ul{
 	list-style: initial;
 	margin-top: 20px;
