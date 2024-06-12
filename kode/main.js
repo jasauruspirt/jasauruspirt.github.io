@@ -22,7 +22,6 @@ window.addEventListener("click", e => {
     }
     else{
       ikonTelusur.classList.remove("fa-times");
-      kolomTelusur.value = "";
     }
   }
 });
