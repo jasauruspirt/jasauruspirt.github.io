@@ -216,6 +216,10 @@ footer{
 }
 .main .article ol ul{
 	list-style: initial;
+	margin-top: 20px;
+}
+.main .article ol ul li{
+	list-style-position: inside!important;
 }
 .main .article ol ul li:not(:last-child){
 	margin-bottom: 16px;
