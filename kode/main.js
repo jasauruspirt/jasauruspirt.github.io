@@ -22,7 +22,7 @@ kolomTelusur.addEventListener("input", () => {
 
 async function fetchArticles(query) {
   try {
-    const response = await fetch('path/to/your/json/file.json');
+    const response = await fetch('/artikel.json');
     const data = await response.json();
     const filteredArticles = data.daftar_artikel.filter(article => 
       article.judul.toLowerCase().includes(query)
