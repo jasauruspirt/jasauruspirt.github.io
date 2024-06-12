@@ -12,7 +12,7 @@ window.addEventListener("click", e => {
 
 kolomTelusur.addEventListener("input", () => {
   const query = kolomTelusur.value.toLowerCase();
-  console.log('Current input:', query);
+  // console.log('Masukan terakhir :', query);
   if (query.length > 0) {
     fetchArticles(query);
   } else {
@@ -29,24 +29,20 @@ async function fetchArticles(query) {
     );
     displayResults(filteredArticles);
   } catch (error) {
-    console.error('Error fetching articles:', error);
+    console.error('Terjadi kesalahan saat mengambil artikel:', error);
   }
 }
 
 function displayResults(articles) {
   if (articles.length > 0) {
     hasilPencarian.innerHTML = articles.map(article => `
-      <div class="artikel">
+      <div class="ditemukan">
         <img src="${article.alamat_gambar}" alt="${article.judul}">
-        <div>
-          <h3><a href="${article.url}">${article.judul}</a></h3>
-          <p>${article.deskripsi}</p>
-          <span>${new Date(article.tanggal).toLocaleDateString()}</span>
-        </div>
+        <a href="${article.url}">${article.judul}</a>
       </div>
     `).join('');
   } else {
-    hasilPencarian.innerHTML = "<p>No articles found.</p>";
+    hasilPencarian.innerHTML = "<p>Tidak ada artikel yang cocok dengan pencarian.</p>";
   }
 }
 
