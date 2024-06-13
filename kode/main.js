@@ -124,12 +124,12 @@ fetch('/artikel.json')
     data.forEach(artikel => {
       console.log(data);
       html += `
-      <article>
-        <h2>${artikel.judul}</h2>
-      </article>`;
+      <div>
+        <a href="${artikel.url}">${artikel.judul}</a>
+      </div>`;
     });
 
-    kontenArtikel.innerHTML = html;
+    artikelBaru.innerHTML = html;
   })
   .catch(error => {
     console.error('Error:', error);
