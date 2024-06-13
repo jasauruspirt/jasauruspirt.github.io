@@ -401,11 +401,12 @@
 
 	<!-- *************** overlay *************** -->
 	<div class="loader">
-  		<img src="/gambar/loader.gif" alt="loading jasa urus pirt">
+  		<!-- <img src="/gambar/loader.gif" alt="loading jasa urus pirt"> -->
+  		<span class="fas fa-spinner"></span>
   	</div>
   	<div class="sukses">
   		<div class="box">		
-			<h3>BERHASIL</h3>
+			<b>BERHASIL</b>
 			<span class="far fa-check-circle"></span>
 			<p>Email telah sukses terkirim</p>
 			<button class="btn tutup">Tutup</button>
@@ -413,7 +414,7 @@
 	</div>
 	<div class="gagal">
   		<div class="box">
-			<h3>GAGAL</h3>
+			<b>GAGAL</b>
 			<span class="far fa-times-circle"></span>
 			<p>Maaf, ada kesalahan teknis</p>
 			<button class="btn tutup">Tutup</button>
@@ -426,10 +427,10 @@
 		<div class="hasil-pencarian grid"></div>
 	</div>
 
+	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script>emailjs.init('azO1U-4tTiNwC8S6D')</script>
 	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<script src="/kode/main.js"></script>
 	<script src="/kode/index.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-	<script>emailjs.init('azO1U-4tTiNwC8S6D')</script>
 </body>
 </html>
