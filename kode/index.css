@@ -2,8 +2,7 @@
 .about .container .box h3,
 .about .fact .box h3,
 .biaya .container .box h3,
-.contact .container .box h3,
-.footer .container .box h3{
+.contact .container .box h3{
 	font-size: 22px;
 	margin-bottom: 1.5rem;
 	text-shadow: 1px 1px var(--biru);

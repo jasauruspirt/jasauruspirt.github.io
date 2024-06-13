@@ -237,27 +237,28 @@ footer{
 	border-radius: 61px;
 	color: #999;
 }
-.main .aside{
+.main .article .aside b{
 	font-size: 24px;
 	color: var(--blue);
 }
-.main .aside .artikel-baru{
+.main .article .aside .artikel-baru{
 	margin-top: 20px;
 }
-.main .aside .artikel-baru a{
+.main .article .aside .artikel-baru a{
 	display: block;
 	margin-bottom: 16px;
 }
-.main .aside .artikel-baru a img{
+.main .article .aside .artikel-baru a img{
 	max-width: 300px;
 	height: auto;
 	margin: auto;
 }
-.main .aside .artikel-baru a b{
+.main .article .aside .artikel-baru a b{
 	font-size: 16px;
 	color: #333;
+	display: block;
 }
-.main .aside .artikel-baru a:hover b{
+.main .article .aside .artikel-baru a:hover b{
 	color: var(--biru);
 }
 /* responsive */
@@ -279,6 +280,11 @@ footer{
 }
 .footer .container .box{
 	padding: 0 1rem;
+}
+.footer .container .box h3{
+	font-size: 22px;
+	margin-bottom: 1.5rem;
+	text-shadow: 1px 1px var(--biru);
 }
 .footer .container .box img{
 	width: 50px;
