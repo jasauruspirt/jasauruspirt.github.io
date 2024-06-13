@@ -241,6 +241,29 @@ footer{
 	border: 1px solid #999;
 	border-radius: 61px;
 }
+.main .aside{
+	font-size: 24px;
+	color: var(--blue);
+}
+.main .aside .artikel-baru{
+	margin-top: 20px;
+}
+.main .aside .artikel-baru a{
+	display: block;
+	margin-bottom: 16px;
+}
+.main .aside .artikel-baru a img{
+	max-width: 300px;
+	height: auto;
+	margin: auto;
+}
+.main .aside .artikel-baru a b{
+	font-size: 16px;
+	color: #333;
+}
+.main .aside .artikel-baru a:hover b{
+	color: var(--biru);
+}
 /* responsive */
 @media screen and (max-width: 800px){
 	.main{

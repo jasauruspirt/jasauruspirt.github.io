@@ -75,10 +75,10 @@ fetch('/artikel.json')
 
     reversedArticles.forEach(artikel => {
       html += `
-        <div>
+        <a href="${artikel.url}">
           <img src="${artikel.alamat_gambar}">
-          <a href="${artikel.url}">${artikel.judul}</a>
-        </div>`;
+          <b>${artikel.judul}</b>
+        </a>`;
     });
     artikelBaru.innerHTML = html;
   })
