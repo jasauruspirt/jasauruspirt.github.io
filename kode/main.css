@@ -527,7 +527,7 @@ footer{
 	scroll-padding-top: 5rem;
 }
 .box-search .hasil-pencarian::-webkit-scrollbar{
-	width: 1rem;
+	width: 10px;
 }
 .box-search .hasil-pencarian::-webkit-scrollbar-thumb{
 	background: ghostwhite;
@@ -555,5 +555,8 @@ footer{
 @media screen and (max-width: 500px){
 	.box-search{
 		padding: 1rem;
+	}
+	.box-search .hasil-pencarian::-webkit-scrollbar{
+		width: 5px;
 	}
 }
