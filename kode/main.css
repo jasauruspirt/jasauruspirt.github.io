@@ -205,6 +205,12 @@ footer{
 	text-align: center;
 	color: #999;
 }
+.main .article a{
+	color: var(--biru);
+}
+.main .article a:hover{
+	color: navy;
+}
 .main .article ul li:not(:last-child),
 .main .article ol li:not(:last-child){
 	margin-bottom: 20px;
@@ -239,7 +245,7 @@ footer{
 }
 .main .aside > b{
 	font-size: 24px;
-	color: var(--blue);
+	text-shadow: 1px 1px var(--biru);
 }
 .main .aside .artikel-baru{
 	margin-top: 20px;
@@ -247,6 +253,7 @@ footer{
 .main .aside .artikel-baru a{
 	display: block;
 	margin-bottom: 16px;
+	color: var(--biru);
 }
 .main .aside .artikel-baru a img{
 	max-width: 300px;
@@ -255,11 +262,10 @@ footer{
 }
 .main .aside .artikel-baru a b{
 	font-size: 16px;
-	color: #333;
 	display: block;
 }
 .main .aside .artikel-baru a:hover b{
-	color: var(--biru);
+	color: navy;
 }
 /* responsive */
 @media screen and (max-width: 800px){
