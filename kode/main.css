@@ -237,28 +237,28 @@ footer{
 	border-radius: 61px;
 	color: #999;
 }
-.main .article .aside > b{
+.main .aside > b{
 	font-size: 24px;
 	color: var(--blue);
 }
-.main .article .aside .artikel-baru{
+.main .aside .artikel-baru{
 	margin-top: 20px;
 }
-.main .article .aside .artikel-baru a{
+.main .aside .artikel-baru a{
 	display: block;
 	margin-bottom: 16px;
 }
-.main .article .aside .artikel-baru a img{
+.main .aside .artikel-baru a img{
 	max-width: 300px;
 	height: auto;
 	margin: auto;
 }
-.main .article .aside .artikel-baru a b{
+.main .aside .artikel-baru a b{
 	font-size: 16px;
 	color: #333;
 	display: block;
 }
-.main .article .aside .artikel-baru a:hover b{
+.main .aside .artikel-baru a:hover b{
 	color: var(--biru);
 }
 /* responsive */
