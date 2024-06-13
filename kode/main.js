@@ -120,14 +120,15 @@ fetch('/artikel.json')
   .then(data => {
     const artikelBaru = document.querySelector('.artikel-baru');
     let html = '';
-
-    data.daftar_artikel.forEach(artikel => {
+    // Membalik urutan array daftar_artikel
+    const reversedArticles = data.daftar_artikel.reverse();
+    
+    reversedArticles.forEach(artikel => {
       html += `
         <div>
           <a href="${artikel.url}">${artikel.judul}</a>
         </div>`;
-    });
-
+      });
     artikelBaru.innerHTML = html;
   })
   .catch(error => {
