@@ -522,6 +522,16 @@ footer{
 	margin-top: 24px;
 	max-height: 75vh;
 	overflow-y: auto;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 5rem;
+}
+.box-search .hasil-pencarian::-webkit-scrollbar{
+	width: 1rem;
+}
+.box-search .hasil-pencarian::-webkit-scrollbar-thumb{
+	background: ghostwhite;
+	border: 1px solid gainsboro;
 }
 .box-search .hasil-pencarian .ditemukan{
 	margin-top: 20px;
