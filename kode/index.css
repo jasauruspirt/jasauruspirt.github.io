@@ -72,11 +72,11 @@
 .about .fact .box{
 	width: 50%;
 }
-.about .container .box{
+.about .container .box:first-child{
 	display: flex;
 	justify-content: flex-start;
 }
-.about .fact .box{
+.about .fact .box:last-child{
 	display: flex;
 	justify-content: flex-end;
 }
@@ -148,6 +148,10 @@
 	.about .container .box,
 	.about .fact .box{
 		width: 100%;
+	}
+	.about .container .box:first-child,
+	.about .fact .box:last-child{
+		justify-content: center;
 	}
 }
 
