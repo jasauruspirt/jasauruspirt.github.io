@@ -45,11 +45,6 @@ body{
 h2{
 	font-size: 28px;
 }
-h3{
-	font-size: 22px;
-	margin-bottom: 1.5rem;
-	text-shadow: 1px 1px var(--biru);
-}
 img{
 	display: block;
 	width: 100%;
@@ -240,6 +235,7 @@ footer{
 	padding: 8px 16px;
 	border: 1px solid #999;
 	border-radius: 61px;
+	color: #999;
 }
 .main .aside{
 	font-size: 24px;
