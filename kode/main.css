@@ -289,10 +289,11 @@ footer{
 .footer .container .box{
 	padding: 0 1rem;
 }
-.footer .container .box h3{
+.footer .container .box b{
 	font-size: 22px;
 	margin-bottom: 1.5rem;
 	text-shadow: 1px 1px var(--biru);
+	display: block;
 }
 .footer .container .box img{
 	width: 50px;
