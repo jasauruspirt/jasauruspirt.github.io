@@ -53,7 +53,7 @@ function displayResults(articles) {
   if (articles.length > 0) {
     hasilPencarian.innerHTML = articles.map(article => `
       <a href="${article.url}" class="ditemukan">
-        <img src="${article.alamat_gambar}" alt="${article.judul}" title="${article.judul}">
+        <img src="${article.alamat_gambar}">
         <b>${article.judul}</b>
       </a>
     `).join('');
@@ -61,6 +61,30 @@ function displayResults(articles) {
     hasilPencarian.innerHTML = "<p>Tidak ada artikel yang cocok dengan pencarian.</p>";
   }
 }
+
+
+// *************** aside artikel ***************
+fetch('/artikel.json')
+  .then(response => response.json())
+  .then(data => {
+    const artikelBaru = document.querySelector('.artikel-baru');
+    let html = '';
+
+    // Membalik urutan array daftar_artikel dan mengambil 5 elemen terakhir
+    const reversedArticles = data.daftar_artikel.reverse().slice(0, 5);
+
+    reversedArticles.forEach(artikel => {
+      html += `
+        <div>
+          <img src="${artikel.alamat_gambar}">
+          <a href="${artikel.url}">${artikel.judul}</a>
+        </div>`;
+    });
+    artikelBaru.innerHTML = html;
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
 
 
 // *************** formulir ***************
@@ -112,26 +136,3 @@ tahun.innerHTML = date;
 //     event.preventDefault()
 //   }
 // });
-
-
-// *************** aside artikel ***************
-fetch('/artikel.json')
-  .then(response => response.json())
-  .then(data => {
-    const artikelBaru = document.querySelector('.artikel-baru');
-    let html = '';
-
-    // Membalik urutan array daftar_artikel dan mengambil 5 elemen terakhir
-    const reversedArticles = data.daftar_artikel.reverse().slice(0, 5);
-
-    reversedArticles.forEach(artikel => {
-      html += `
-        <div>
-          <a href="${artikel.url}">${artikel.judul}</a>
-        </div>`;
-    });
-    artikelBaru.innerHTML = html;
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
