@@ -8,12 +8,6 @@
 	margin-bottom: 1.5rem;
 	text-shadow: 1px 1px var(--biru);
 }
-/* img */
-.about .container .box img,
-.about .fact .box img{
-	max-width: 400px;
-	max-height: 300px;
-}
 
 /* ------------------------- home section ------------------------- */
 .home{
@@ -77,6 +71,19 @@
 .about .container .box,
 .about .fact .box{
 	width: 50%;
+}
+.about .container .box{
+	display: flex;
+	justify-content: flex-start;
+}
+.about .fact .box{
+	display: flex;
+	justify-content: flex-end;
+}
+.about .container .box img,
+.about .fact .box img{
+	max-width: 400px;
+	max-height: 300px;
 }
 /* fact */
 .about .fact{
