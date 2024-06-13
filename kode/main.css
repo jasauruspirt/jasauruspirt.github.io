@@ -165,7 +165,7 @@ footer{
     align-items: center;
     width: 34px;
     height: 34px;
-	background: var(--biru) 
+	background: var(--biru); 
 	color: ghostwhite;
 	border: 1px solid var(--biru);
 	border-radius: 2px;
