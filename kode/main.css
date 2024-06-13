@@ -159,15 +159,16 @@ footer{
 }
 .header .search{
 	cursor: pointer;
-	color: var(--biru);
-	border: 1px solid var(--biru);
-	border-radius: 2px;
 	padding: 8px;
 	display: flex;
     justify-content: center;
     align-items: center;
     width: 34px;
     height: 34px;
+	background: var(--biru) 
+	color: ghostwhite;
+	border: 1px solid var(--biru);
+	border-radius: 2px;
 }
 /* responsive media query */
 @media screen and (max-width: 800px){
