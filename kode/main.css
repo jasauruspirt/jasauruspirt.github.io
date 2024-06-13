@@ -237,7 +237,7 @@ footer{
 	border-radius: 61px;
 	color: #999;
 }
-.main .article .aside b{
+.main .article .aside > b{
 	font-size: 24px;
 	color: var(--blue);
 }
