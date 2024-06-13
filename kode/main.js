@@ -103,7 +103,7 @@ let date = new Date().getFullYear();
 tahun.innerHTML = date;
 
 
-// --------------- anti cheats ---------------
+// *************** anti cheats ***************
 // document.addEventListener("contextmenu", e => {
 //  e.preventDefault();
 // }, false);
@@ -112,3 +112,25 @@ tahun.innerHTML = date;
 //     event.preventDefault()
 //   }
 // });
+
+
+// *************** aside artikel ***************
+fetch('/artikel.json')
+  .then(response => response.json())
+  .then(data => {
+    const artikelBaru = document.querySelector('artikel-baru');
+    let html = '';
+
+    data.forEach(artikel => {
+      console.log(data);
+      html += `
+      <article>
+        <h2>${artikel.judul}</h2>
+      </article>`;
+    });
+
+    kontenArtikel.innerHTML = html;
+  })
+  .catch(error => {
+    console.error('Error:', error);
+});
