@@ -63,40 +63,6 @@ function displayResults(articles) {
 }
 
 
-// *************** formulir ***************
-const kirim = document.getElementById('kirim');
-const loader = document.querySelector('.loader');
-const sukses = document.querySelector('.sukses');
-const gagal = document.querySelector('.gagal');
-
-document.getElementById('formulir').addEventListener('submit', function(event) {
-  event.preventDefault();
-  loader.classList.add('aktif');
-
-  const serviceID = 'default_service';
-  const templateID = 'template_i3ov2dd';
-
-  emailjs.sendForm(serviceID, templateID, this)
-  .then( () => {
-    loader.classList.remove('aktif');
-    sukses.classList.add('aktif');
-    document.getElementById("formulir").reset();
-  },
-  (err) => {
-    loader.classList.remove('aktif');
-    gagal.classList.add('aktif');
-    document.getElementById("formulir").reset();
-  });
-});
-
-const tutup = document.querySelectorAll('.btn.tutup');
-tutup.forEach( t => {
-  t.addEventListener("click", () => {
-    t.parentElement.parentElement.classList.remove('aktif');
-  })
-});
-
-
 // *************** footer credit ***************
 const tahun = document.querySelector(".tahun");
 let date = new Date().getFullYear();
