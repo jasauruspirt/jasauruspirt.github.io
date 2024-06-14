@@ -289,6 +289,35 @@ body > .section{
 body > .section > *:not(:last-child){
 	margin-bottom: 20px;
 }
+body > .section h1{
+	font-size: 32px;
+	color: var(--biru);
+	line-height: 40px;
+	text-align: center;
+}
+body > .section h2{
+	font-size: 28px;
+	line-height: 36px;
+}
+body > .section h3{
+	font-size: 24px;
+	line-height: 32px;
+}
+body > .section a{
+	color: var(--biru);
+}
+body > .section a:hover{
+	color: navy;
+}
+body > .section ul li:not(:last-child){
+	margin-bottom: 16px;
+	list-style-position: inside!important;
+}
+body > .section ul > li::marker,
+body > .section ol > li::marker{
+	margin-right: 12px;
+}
+
 /* responsive */
 @media screen and (max-width: 800px){
 	body > .section{
