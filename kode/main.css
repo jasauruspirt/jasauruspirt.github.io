@@ -282,6 +282,25 @@ footer{
 	}
 }
 
+/* ------------------------- body > .section ------------------------- */
+body > .section{
+	padding: 3rem;
+}
+body > .section > *:not(:last-child){
+	margin-bottom: 20px;
+}
+/* responsive */
+@media screen and (max-width: 800px){
+	body > .section{
+		padding: 3rem 2rem;
+	}
+}
+@media screen and (max-width: 500px){
+	body > .section{
+		padding: 3rem 1rem;
+	}
+}
+
 /* ------------------------- footer section ------------------------- */
 .footer{
 	background: ghostwhite;

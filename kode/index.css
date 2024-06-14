@@ -87,7 +87,7 @@
 	margin-top: 3rem;
 }
 .about .fact .box p:nth-child(2){
-	margin-bottom: 1rem;
+	margin-bottom: 20px;
 }
 .about .fact .box .cta{
 	background: var(--biru);
@@ -183,7 +183,7 @@
 	margin: auto;
 }
 .biaya .container .box p:nth-child(2){
-	margin-bottom: 1rem;
+	margin-bottom: 20px;
 }
 .biaya .container .box .btn span{
 	margin-right: 8px;
@@ -358,6 +358,9 @@
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	   -ms-flex-pack: center;
+	 justify-content: center;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -379,7 +382,7 @@
 	font-size: 1rem;
 }
 .contact .container .box:last-child .grid{
-	margin-top: 1rem;
+	margin-top: 20px;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-gap: 1rem;
 }
@@ -387,6 +390,9 @@
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	   -ms-flex-pack: center;
+	 justify-content: center;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
