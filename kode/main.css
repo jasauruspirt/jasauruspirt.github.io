@@ -404,7 +404,17 @@ footer{
 	opacity: 1;
 	visibility: visible;
 }
-
+.berputar{
+  animation: berputar 1s linear infinite;
+}
+@keyframes berputar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /*sukses*/
 .sukses,
 .gagal{
