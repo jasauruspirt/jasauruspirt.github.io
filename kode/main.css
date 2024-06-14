@@ -386,14 +386,25 @@ footer{
 	z-index: 101;
 	background: rgba(0,0,0,0.25);
 }
-.loader img{
+/*.loader img{
 	width: 150px;
 	height: 150px;
 	opacity: 0;
 }
 .loader.aktif img{
 	opacity: 1;
+}*/
+.loader .fa-spinner{
+	font-size: 100px;
+	opacity: 0;
+	color: #fff;
+	visibility: hidden;
 }
+.loader.aktif .fa-spinner{
+	opacity: 1;
+	visibility: visible;
+}
+
 /*sukses*/
 .sukses,
 .gagal{
@@ -448,8 +459,8 @@ footer{
 	        flex-direction: column;
 	gap: 2rem;
 }
-.sukses .box h3,
-.gagal .box h3{
+.sukses .box b,
+.gagal .box b{
 	font-size: 2rem;
 	color: #333;
 	color: darkgreen;
@@ -485,7 +496,7 @@ footer{
 	}
 }
 /*gagal*/
-.gagal .box h3{
+.gagal .box b{
 	font-size: 2rem;
 	color: #333;
 	color: darkred;
