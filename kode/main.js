@@ -4,9 +4,11 @@ images.forEach(function(image) {
  image.setAttribute("loading", "lazy");
 });
 
+
 // *************** next header ***************
 const nextHeader = document.querySelector('.header').nextElementSibling;
 nextHeader.style.marginTop = "60px";
+
 
 // *************** Pencarian ***************
 const ikonTelusur = document.querySelector(".search");
@@ -70,11 +72,11 @@ tahun.innerHTML = date;
 
 
 // *************** anti cheats ***************
-// document.addEventListener("contextmenu", e => {
-//  e.preventDefault();
-// }, false);
-// document.body.addEventListener('keydown', event => {
-//   if (event.ctrlKey && 'cvxspwuaz'.indexOf(event.key) !== -1) {
-//     event.preventDefault()
-//   }
-// });
+document.addEventListener("contextmenu", e => {
+ e.preventDefault();
+}, false);
+document.body.addEventListener('keydown', event => {
+  if (event.ctrlKey && 'cvxspwuaz'.indexOf(event.key) !== -1) {
+    event.preventDefault()
+  }
+});
