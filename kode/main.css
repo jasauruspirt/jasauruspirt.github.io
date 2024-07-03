@@ -232,16 +232,13 @@ footer{
 .main .article ol ul li:not(:last-child){
 	margin-bottom: 16px;
 }
-.main .article .table thead tr,
-.main .article .table tbody tr{
-	border: 1px solid rgba(0,0,0,10%);
-	border-collapse: collapse;
-}
 .main .article .table thead tr th{
 	background: ghostwhite;
 }
 .main .article .table thead tr th,
 .main .article .table tbody tr td{
+	border: 1px solid rgba(0,0,0,10%);
+	border-collapse: collapse;
 	padding: 16px 8px;
 }
 .main .article .table tbody tr:nth-child(even){
