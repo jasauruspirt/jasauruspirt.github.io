@@ -66,4 +66,15 @@
     </image:image>
   </url>
   
+  <url>
+    <loc>https://jasauruspirt.github.io/perbedaan-bpom-dan-pirt.html</loc>
+    <lastmod>2020-01-03T00:00:00+00:00</lastmod>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://jasauruspirt.github.io/gambar/sampul/perbedaan-bpom-dan-pirt.jpg</image:loc>
+      <image:title>Produk makanan kering dengan label izin bpom dan pirt</image:title>
+    </image:image>
+  </url>
+  
 </urlset>
