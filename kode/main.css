@@ -232,6 +232,9 @@ footer{
 .main .article ol ul li:not(:last-child){
 	margin-bottom: 16px;
 }
+.main .article .table{
+	width: 100%!important;
+}
 .main .article .table thead tr th{
 	background: ghostwhite;
 }
@@ -243,6 +246,10 @@ footer{
 }
 .main .article .table tbody tr:nth-child(even){
 	background: ghostwhite;
+}
+.main .article .table tbody tr td{
+	vertical-align: top;
+	font-size: 14px;
 }
 .main .article .tag{
 	display: -webkit-box;
@@ -291,6 +298,10 @@ footer{
 @media screen and (max-width: 500px){
 	.main{
 		padding: 3rem 1rem;
+	}
+	.main .article .table thead tr th,
+	.main .article .table tbody tr td{
+		padding: 16px 4px;
 	}
 }
 
