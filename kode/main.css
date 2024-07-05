@@ -130,8 +130,8 @@ ol > li::marker{
 	border-radius: 2px;
 	box-shadow: 0 0 8px silver;
 }
-.fs-32{
-	font-size: 32px;
+.fs-64{
+	font-size: 64px;
 }
 
 /*root responsive*/
