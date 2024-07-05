@@ -82,6 +82,10 @@ ol > li::marker{
 	color: var(--biru);
 	display: block;
 }
+.alt-heading{
+	font-size: 28px;
+	line-height: 36px;
+}
 .btn{
 	margin-top: 1rem;
 	display: inline-block;
@@ -106,6 +110,21 @@ ol > li::marker{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-gap: 2rem;
+}
+.flex-center{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	        gap: 1rem;
+}
+.fs-32{
+	font-size: 32px;
 }
 /*root responsive*/
 section,
