@@ -76,5 +76,16 @@
       <image:title>Produk makanan kering dengan label izin bpom dan pirt</image:title>
     </image:image>
   </url>
+
+  <url>
+    <loc>https://jasauruspirt.github.io/tips-jitu-memilih-konsultan-pirt-yang-tepat.html</loc>
+    <lastmod>2020-01-04T00:00:00+00:00</lastmod>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://jasauruspirt.github.io/gambar/sampul/tips-jitu-memilih-konsultan-pirt-yang-tepat.jpg</image:loc>
+      <image:title>Ilustrasi Konsultan PIRT sedang berjabat tangan dengan klien</image:title>
+    </image:image>
+  </url>
   
 </urlset>
