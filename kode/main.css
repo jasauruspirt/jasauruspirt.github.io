@@ -133,6 +133,9 @@ ol > li::marker{
 .fs-64{
 	font-size: 64px;
 }
+.fs-18{
+	font-size: 18px;
+}
 
 /*root responsive*/
 section,
