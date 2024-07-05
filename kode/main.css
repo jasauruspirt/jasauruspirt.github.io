@@ -279,7 +279,6 @@ footer{
 }
 .main .article .table tbody tr td{
 	vertical-align: top;
-	font-size: 14px;
 }
 .main .article .tag{
 	display: -webkit-box;
@@ -333,6 +332,9 @@ footer{
 	.main .article .table thead tr th,
 	.main .article .table tbody tr td{
 		padding: 16px 4px;
+	}
+	.main .article .table tbody tr td{
+		font-size: 14px;
 	}
 }
 
