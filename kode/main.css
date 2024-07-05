@@ -125,9 +125,15 @@ ol > li::marker{
 	        gap: 1rem;
 	        flex-direction: column;
 }
+.card{
+	padding: 1rem;
+	border-radius: 2px;
+	box-shadow: 0 0 8px silver;
+}
 .fs-32{
 	font-size: 32px;
 }
+
 /*root responsive*/
 section,
 header,
