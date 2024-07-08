@@ -87,5 +87,16 @@
       <image:title>Ilustrasi Konsultan PIRT sedang berjabat tangan dengan klien</image:title>
     </image:image>
   </url>
-  
+
+  <url>
+    <loc>https://jasauruspirt.github.io/tips-menulis-label-pirt-yang-sesuai-aturan.html</loc>
+    <lastmod>2020-01-05T00:00:00+00:00</lastmod>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://jasauruspirt.github.io/gambar/sampul/tips-menulis-label-pirt-yang-sesuai-aturan.jpg</image:loc>
+      <image:title>Contoh label produk PIRT dari pangan olahan keripik tempe</image:title>
+    </image:image>
+  </url>
+
 </urlset>
