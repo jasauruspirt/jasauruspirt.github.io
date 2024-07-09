@@ -14,11 +14,11 @@ async function fetchLatestArticles() {
 function displayLatestArticles(articles) {
     const boxSliderArtikel = document.querySelector('.box-slider-artikel');
     boxSliderArtikel.innerHTML = articles.map(article => `
-        <div class="content-slider-artikel swiper-slide slide">
+        <a href="${article.url}" class="content-slider-artikel swiper-slide slide">
             <img src="${article.alamat_gambar}">
             <h3>${article.judul}</h3>
             <p>${article.deskripsi}</p>
-        </div>
+        </a>
     `).join('');
 }
 
