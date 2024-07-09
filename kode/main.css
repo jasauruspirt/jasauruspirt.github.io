@@ -302,18 +302,20 @@ footer{
 	margin-top: 20px;
 }
 .main .aside .artikel-baru a{
-	display: block;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 1rem 8px;
 	margin-bottom: 16px;
 	color: var(--biru);
 }
 .main .aside .artikel-baru a img{
-	max-width: 300px;
+	max-width: 150px;
 	height: auto;
 	margin: auto;
 }
 .main .aside .artikel-baru a b{
 	font-size: 16px;
-	display: block;
 }
 .main .aside .artikel-baru a:hover b{
 	color: navy;
