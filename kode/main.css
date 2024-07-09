@@ -310,12 +310,12 @@ footer{
 	color: var(--biru);
 }
 .main .aside .artikel-baru a img{
-	max-width: 150px;
+	max-width: 90px;
 	height: auto;
-	margin: auto;
 }
 .main .aside .artikel-baru a b{
-	font-size: 16px;
+	font-size: 14px;
+	line-height: 20px;
 }
 .main .aside .artikel-baru a:hover b{
 	color: navy;
@@ -325,6 +325,13 @@ footer{
 	.main{
 		grid-template-columns: 1fr;
 		padding: 3rem 2rem;
+	}
+	.main .aside .artikel-baru a img{
+		max-width: 120px;
+	}
+	.main .aside .artikel-baru a b{
+		font-size: 12px;
+		line-height: 18px;
 	}
 }
 @media screen and (max-width: 500px){
